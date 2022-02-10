@@ -1,0 +1,120 @@
+$mainColor1: #0a0a0a;
+$mainColor2: #b3b8be;
+$mainColor3: #f01010;
+$mainColor4: #1ecfa9;
+
+* {
+   font-family: "Azeret Mono", monospace;
+   margin: 0;
+   padding: 0;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.container {
+   width: 60%;
+   height: 100%;
+   margin: 50px auto;
+   position: relative;
+}
+.timer {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   max-width: 800px;
+   margin: 0 auto;
+   background-color: $mainColor2;
+   padding: 20px 0;
+   border-radius: 10px;
+   box-shadow: 1px 1px 15px $mainColor1;
+   &__block {
+      width: 150px;
+      border-radius: 10px;
+      box-shadow: 1px 1px 15px $mainColor1;
+      .time {
+         background-color: $mainColor1;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         color: $mainColor3;
+         height: 150px;
+         font-size: 95px;
+         border-radius: 10px;
+      }
+   }
+}
+
+.buttons {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   max-width: 800px;
+   margin: 0 auto;
+   margin-top: 250px;
+   padding: 10px 0;
+   .button {
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      padding: 10px;
+      width: 140px;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+      &.start {
+         color: $mainColor1;
+         background-color: $mainColor4;
+         &:hover {
+            background-color: $mainColor2;
+            color: $mainColor3;
+            transition: all 1s;
+         }
+      }
+      &.disablet {
+         display: none;
+      }
+   }
+}
+.results__block {
+   position: absolute;
+   left: 0px;
+   top: 200px;
+   width: 200px;
+   font-weight: 600;
+   color: $mainColor1;
+   font-size: 16px;
+   padding: 15px;
+   .results {
+      font-size: 14px;
+      max-height: 200px;
+      overflow: auto;
+   }
+   .resulst__title {
+      text-align: center;
+      margin-bottom: 10px;
+   }
+   .results__info {
+      margin: 10px 0;
+   }
+}
+.results__block2 {
+   position: absolute;
+   right: 0px;
+   top: 200px;
+   width: 200px;
+   font-weight: 600;
+   color: $mainColor1;
+   font-size: 16px;
+   padding: 15px;
+   .results2 {
+      font-size: 14px;
+      max-height: 200px;
+      overflow: auto;
+   }
+   .resulst__title {
+      text-align: center;
+      margin-bottom: 10px;
+   }
+   .results__info {
+      margin: 10px 0;
+   }
+}

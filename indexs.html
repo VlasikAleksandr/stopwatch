@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Stopwatch</title>
+   <link rel="preconnect" href="http://fonts.googleapis.com">
+   <link rel="preconnect" href="http://fonts.gsststic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css?family=Azeret+Mono&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+   <div class="container">
+      <div class="timer">
+         <div class="timer__block">
+            <div class="time hour ">00</div>
+            <!-- <div class="title">Hours</div> -->
+         </div>
+         <div class="timer__block">
+            <div class="time minute">00</div>
+            <!-- <div class="title">Minutes</div> -->
+         </div>
+         <div class="timer__block">
+            <div class="time second">00</div>
+            <!-- <div class="title">Seconds</div> -->
+         </div>
+         <div class="timer__block">
+            <div class="time millisecond">00</div>
+            <!-- <div class="title">Milliseconds</div> -->
+         </div>
+      </div>
+      <div class="buttons">
+         <button class="button circle disablet">&#9711</button>
+         <button class="button pause disablet">&#9208</button>
+         <button class="button start">&#128898</button>
+         <button class="button stop disablet">&#9209</button>
+         <button class="button result disablet">&#9873</button>
+      </div>
+      <div class="results__block">
+         <div class="results"></div>
+      </div>
+      <div class="results__block2">
+         <div class="results2"></div>
+      </div>
+   </div>
+   <script src="script.js"></script>
+</body>
+
+</html>
